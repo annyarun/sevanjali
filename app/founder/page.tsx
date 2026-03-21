@@ -71,7 +71,7 @@ export default function FounderPage() {
 
               <div className="relative w-52 h-60 mx-auto mb-5 rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/images/images/founder.jpg"
+                  src="/images/founder.png"
                   alt="Sri Krishna Kumar Punja – Founder, Sevanjali Prathishtana"
                   fill
                   className="object-cover object-top"

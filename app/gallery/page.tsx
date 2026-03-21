@@ -9,39 +9,72 @@ interface GalleryImage {
   src: string
   alt: string
   category: string
-  span?: string
 }
 
 const images: GalleryImage[] = [
-  // Medical camps
-  { src: '/images/gallery/medical-1.jpg', alt: 'Free medical camp - doctors serving patients', category: 'Medical Camps', span: 'col-span-2 row-span-2' },
-  { src: '/images/gallery/medical-2.jpg', alt: 'Medical camp - health checkup', category: 'Medical Camps' },
-  { src: '/images/gallery/medical-3.jpg', alt: 'Medical camp - community health', category: 'Medical Camps' },
+  // Medical Camps
+  { src: '/images/activities/medical-camp-1.jpg', alt: 'Free medical camp – doctors serving patients', category: 'Medical Camps' },
+  { src: '/images/activities/medical-camp-2.jpg', alt: 'Medical camp – health check-up', category: 'Medical Camps' },
+  { src: '/images/activities/medical-camp-3.jpg', alt: 'Medical camp – community health services', category: 'Medical Camps' },
+  { src: '/images/activities/medical-camp-4.jpg', alt: 'Free healthcare for all', category: 'Medical Camps' },
+  { src: '/images/activities/medical-camp-5.jpg', alt: 'Medical camp volunteers', category: 'Medical Camps' },
+  { src: '/images/activities/medical-camp-6.jpg', alt: 'Specialist doctors at camp', category: 'Medical Camps' },
+  { src: '/images/gallery/medical-1.jpg', alt: 'Sevanjali medical outreach', category: 'Medical Camps' },
+  { src: '/images/gallery/medical-2.jpg', alt: 'Health checkup at camp', category: 'Medical Camps' },
+  { src: '/images/gallery/medical-3.jpg', alt: 'Community health camp', category: 'Medical Camps' },
   { src: '/images/gallery/medical-4.jpg', alt: 'Free healthcare services', category: 'Medical Camps' },
-  { src: '/images/gallery/medical-5.jpg', alt: 'Medical camp volunteers', category: 'Medical Camps' },
-  // Blood donation
-  { src: '/images/gallery/camp-1.jpg', alt: 'Blood donation drive', category: 'Blood Donation', span: 'row-span-2' },
-  { src: '/images/gallery/camp-2.jpg', alt: 'Blood donation camp volunteers', category: 'Blood Donation' },
-  // Charity & community
-  { src: '/images/gallery/charity-1.jpg', alt: 'Community charity event', category: 'Charity', span: 'col-span-2' },
-  { src: '/images/gallery/charity-2.jpg', alt: 'Sevanjali charity work', category: 'Charity' },
-  { src: '/images/gallery/charity-3.jpg', alt: 'Community service', category: 'Charity' },
+  { src: '/images/gallery/medical-5.jpg', alt: 'Medical camp volunteers at work', category: 'Medical Camps' },
+  // Blood Donation
+  { src: '/images/activities/blood-donation-camp.jpg', alt: 'Blood donation drive – donors giving', category: 'Blood Donation' },
+  { src: '/images/activities/blood-donation2.jpg', alt: 'Blood donation camp volunteers', category: 'Blood Donation' },
+  { src: '/images/activities/blood-donation3.jpg', alt: 'Community blood donation camp', category: 'Blood Donation' },
+  { src: '/images/gallery/camp-1.jpg', alt: 'Blood donation camp', category: 'Blood Donation' },
+  { src: '/images/gallery/camp-2.jpg', alt: 'Blood donation volunteers', category: 'Blood Donation' },
+  // Ganeshotsava
+  { src: '/images/events/ganesh-idol.jpg', alt: 'Ganeshotsava – beautifully decorated idol', category: 'Ganeshotsava' },
+  { src: '/images/events/ganesh-puja.jpg', alt: 'Ganeshotsava – puja ceremony', category: 'Ganeshotsava' },
+  { src: '/images/events/ganesh-gathering.jpg', alt: 'Ganeshotsava – community gathering', category: 'Ganeshotsava' },
+  { src: '/images/events/ganesh-bhajan.jpg', alt: 'Ganeshotsava – devotional bhajans', category: 'Ganeshotsava' },
+  { src: '/images/events/ganesh-prep1.jpg', alt: 'Ganeshotsava – festival preparations', category: 'Ganeshotsava' },
+  { src: '/images/events/ganesh-prep2.jpg', alt: 'Ganeshotsava – decoration in progress', category: 'Ganeshotsava' },
+  { src: '/images/events/ganesh-aerial-night.jpg', alt: 'Ganeshotsava – aerial night view of celebrations', category: 'Ganeshotsava' },
+  { src: '/images/events/ganesh-vintage1.jpg', alt: 'Ganeshotsava – historic celebration (archival)', category: 'Ganeshotsava' },
+  { src: '/images/events/ganesh-vintage2.jpg', alt: 'Ganeshotsava – early years (archival)', category: 'Ganeshotsava' },
+  { src: '/images/events/ganesh-1.jpg', alt: 'Ganeshotsava festival', category: 'Ganeshotsava' },
+  { src: '/images/events/ganesh-2.jpg', alt: 'Ganeshotsava celebrations', category: 'Ganeshotsava' },
+  { src: '/images/events/ganesh-3.jpg', alt: 'Ganeshotsava cultural programme', category: 'Ganeshotsava' },
+  // Community & Events
+  { src: '/images/events/community-prayer.jpg', alt: 'Community prayer gathering', category: 'Community' },
+  { src: '/images/events/sevanjali-building.jpg', alt: 'Sevanjali Prathishtana premises', category: 'Community' },
+  { src: '/images/activities/community-meeting.jpg', alt: 'Community meeting at Sevanjali', category: 'Community' },
+  { src: '/images/activities/volunteers-team.jpg', alt: 'Sevanjali volunteers team', category: 'Community' },
+  { src: '/images/activities/inauguration.jpg', alt: 'Programme inauguration ceremony', category: 'Community' },
   { src: '/images/gallery/community-1.jpg', alt: 'Community gathering', category: 'Community' },
   { src: '/images/gallery/community-2.jpg', alt: 'Community event', category: 'Community' },
-  // Ganeshotsava
-  { src: '/images/events/ganesh-1.jpg', alt: 'Ganeshotsava festival', category: 'Ganeshotsava', span: 'col-span-2 row-span-2' },
-  { src: '/images/events/ganesh-2.jpg', alt: 'Ganeshotsava celebrations', category: 'Ganeshotsava' },
-  { src: '/images/events/ganesh-3.jpg', alt: 'Ganeshotsava - cultural programme', category: 'Ganeshotsava' },
-  { src: '/images/events/ganesh-4.jpg', alt: 'Ganeshotsava - community gathering', category: 'Ganeshotsava' },
-  { src: '/images/events/ganesh-5.jpg', alt: 'Ganeshotsava festival moments', category: 'Ganeshotsava' },
-  { src: '/images/events/ganesh-6.jpg', alt: 'Ganeshotsava celebration', category: 'Ganeshotsava' },
-  // COVID/other
-  { src: '/images/gallery/covid-1.jpg', alt: 'Community assistance during COVID', category: 'Charity' },
-  { src: '/images/gallery/covid-2.jpg', alt: 'Relief work', category: 'Charity' },
-  { src: '/images/gallery/covid-3.jpg', alt: 'Essential supplies distribution', category: 'Charity' },
+  { src: '/images/gallery/community3.jpg', alt: 'Community programme', category: 'Community' },
+  // Relief & Charity
+  { src: '/images/activities/flood-relief-boat.jpg', alt: 'Flood relief – rescue boat operations', category: 'Relief & Charity' },
+  { src: '/images/activities/food-distribution.jpg', alt: 'Food distribution to the needy', category: 'Relief & Charity' },
+  { src: '/images/activities/charity-event.jpg', alt: 'Charity event organised by Sevanjali', category: 'Relief & Charity' },
+  { src: '/images/activities/community-service.jpg', alt: 'Community service work', category: 'Relief & Charity' },
+  { src: '/images/gallery/charity-1.jpg', alt: 'Community charity event', category: 'Relief & Charity' },
+  { src: '/images/gallery/charity-2.jpg', alt: 'Sevanjali charity work', category: 'Relief & Charity' },
+  { src: '/images/gallery/charity-3.jpg', alt: 'Community service', category: 'Relief & Charity' },
+  // Aerial & Landmark
+  { src: '/images/gallery/aerial1.jpg', alt: 'Aerial view – Farangipete community', category: 'Aerial' },
+  { src: '/images/gallery/aerial2.jpg', alt: 'Aerial view – event grounds', category: 'Aerial' },
+  { src: '/images/gallery/aerial3.jpg', alt: 'Aerial view – festival celebrations', category: 'Aerial' },
+  { src: '/images/gallery/aerial4.jpg', alt: 'Aerial view – community gathering', category: 'Aerial' },
+  // Vintage & Archive
+  { src: '/images/gallery/vintage1.jpg', alt: 'Archival photo – early days of Sevanjali', category: 'Archive' },
+  { src: '/images/gallery/vintage2.jpg', alt: 'Archival photo – founding years', category: 'Archive' },
+  { src: '/images/gallery/event1.jpg', alt: 'Past event – Sevanjali programme', category: 'Archive' },
+  { src: '/images/gallery/event2.jpg', alt: 'Past event – cultural programme', category: 'Archive' },
+  { src: '/images/gallery/event3.jpg', alt: 'Past event – community gathering', category: 'Archive' },
+  { src: '/images/gallery/event4.jpg', alt: 'Past event – celebration', category: 'Archive' },
 ]
 
-const categories = ['All', 'Medical Camps', 'Blood Donation', 'Ganeshotsava', 'Charity', 'Community']
+const categories = ['All', 'Medical Camps', 'Blood Donation', 'Ganeshotsava', 'Community', 'Relief & Charity', 'Aerial', 'Archive']
 
 export default function GalleryPage() {
   const [active, setActive] = useState('All')
@@ -71,7 +104,7 @@ export default function GalleryPage() {
               Gallery
             </h1>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Glimpses of our journey — medical camps, community events, festivals, 
+              Glimpses of our journey — medical camps, flood relief, Ganeshotsava,
               and the smiles that make it all worthwhile.
             </p>
           </motion.div>
@@ -100,6 +133,11 @@ export default function GalleryPage() {
             ))}
           </motion.div>
 
+          {/* Photo count */}
+          <p className="text-center text-gray-500 text-sm mb-8">
+            Showing {filtered.length} photo{filtered.length !== 1 ? 's' : ''}
+          </p>
+
           {/* Masonry Grid */}
           <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
             {filtered.map((img, i) => (
@@ -107,7 +145,7 @@ export default function GalleryPage() {
                 key={`${img.src}-${active}`}
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: i * 0.05 }}
+                transition={{ duration: 0.4, delay: Math.min(i * 0.04, 0.6) }}
                 className="break-inside-avoid rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover cursor-pointer group relative"
                 onClick={() => openLightbox(i)}
               >

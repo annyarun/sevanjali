@@ -153,9 +153,8 @@ export default function Footer() {
                 <WhatsAppIcon />
                 Chat on WhatsApp
               </a>
-              {/* Replace the URL below with your actual WhatsApp Channel link */}
               <a
-                href="https://whatsapp.com/channel/0029Va4YourChannelIDHere"
+                href="https://chat.whatsapp.com/55N5NCCpZZ6BztKHaTqCg0?mode=gi_t"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors duration-300"

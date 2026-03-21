@@ -110,9 +110,8 @@ export default function ContactPage() {
               </div>
             </a>
 
-            {/* WhatsApp Channel — replace the URL with your actual channel link */}
             <a
-              href="https://whatsapp.com/channel/0029Va4YourChannelIDHere"
+              href="https://chat.whatsapp.com/55N5NCCpZZ6BztKHaTqCg0?mode=gi_t"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-green-700 hover:bg-green-800 text-white font-bold px-6 py-4 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl group"

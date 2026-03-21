@@ -4,10 +4,12 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Phone } from 'lucide-react'
+import { Menu, X, Phone, Heart } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const navLinks = [
+interface NavLink { href: string; label: string }
+
+const navLinks: NavLink[] = [
   { href: '/', label: 'Home' },
   { href: '/#about', label: 'About' },
   { href: '/#activities', label: 'Activities' },
@@ -54,19 +56,23 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-saffron-500 shadow-md group-hover:scale-105 transition-transform duration-300">
+          <Link href="/" className="flex items-center gap-2 group">
+            <div className="relative w-12 h-12 group-hover:scale-105 transition-transform duration-300 shrink-0">
               <Image
                 src="/images/logo.png"
                 alt="Sevanjali Prathishtana Logo"
                 fill
-                className="object-cover"
+                className="object-contain"
+                style={{ filter: 'hue-rotate(20deg) saturate(1.15)' }}
                 onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = 'none'
+                  const el = e.target as HTMLImageElement
+                  el.style.display = 'none'
+                  const fb = el.nextElementSibling as HTMLElement | null
+                  if (fb) fb.style.display = 'flex'
                 }}
               />
-              {/* Fallback avatar — always rendered behind the img */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-saffron-500 to-saffron-600 text-white text-lg font-bold -z-10">
+              {/* Fallback initials — hidden when logo loads */}
+              <div className="absolute inset-0 items-center justify-center bg-gradient-to-br from-saffron-500 to-saffron-600 rounded-full text-white text-base font-bold hidden">
                 SP
               </div>
             </div>
@@ -120,14 +126,12 @@ export default function Navbar() {
               <Phone size={16} />
               +91 94485 02319
             </a>
-            <a
-              href="https://wa.me/919448502319"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/donate"
               className="btn-primary text-sm !px-5 !py-2"
             >
               Donate Now
-            </a>
+            </Link>
           </div>
 
           {/* Mobile toggle */}
@@ -177,14 +181,14 @@ export default function Navbar() {
                     <Phone size={16} />
                     +91 94485 02319
                   </a>
-                  <a
-                    href="https://wa.me/919448502319"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-center btn-primary !py-2.5"
+                  <Link
+                    href="/donate"
+                    onClick={() => setIsOpen(false)}
+                    className="flex items-center justify-center gap-2 btn-primary !py-2.5"
                   >
+                    <Heart size={16} className="fill-white" />
                     Donate Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </motion.div>

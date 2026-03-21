@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useInView } from 'react-intersection-observer'
-import { Heart, HandHeart, ArrowRight } from 'lucide-react'
+import { Heart } from 'lucide-react'
 
 export default function CallToAction() {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true })
@@ -35,21 +35,12 @@ export default function CallToAction() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link
-                href="/contact"
+                href="/donate"
                 className="inline-flex items-center gap-2 bg-white text-saffron-600 hover:bg-saffron-50 font-bold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
               >
-                <HandHeart size={20} />
-                Volunteer With Us
+                <Heart size={20} className="fill-saffron-500" />
+                Donate Now
               </Link>
-              <a
-                href="https://wa.me/919448502319"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white hover:text-saffron-600 font-bold px-8 py-4 rounded-full transition-all duration-300"
-              >
-                Make a Donation
-                <ArrowRight size={18} />
-              </a>
             </div>
           </div>
         </motion.div>

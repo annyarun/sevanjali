@@ -3,6 +3,7 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Stats from '@/components/Stats'
 import Activities from '@/components/Activities'
+import Scholarships from '@/components/Scholarships'
 import Founder from '@/components/Founder'
 import Events from '@/components/Events'
 import CallToAction from '@/components/CallToAction'
@@ -20,6 +21,7 @@ export default function HomePage() {
       <About />
       <Stats />
       <Activities />
+      <Scholarships />
       <Founder />
       <Events />
       <CallToAction />
