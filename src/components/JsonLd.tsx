@@ -5,7 +5,7 @@ export function OrganizationJsonLd() {
     name: "Sevanjali Prathishtana",
     alternateName: "Sevanjali Prathishtana Farangipete",
     url: "https://www.sevanjaliprathishtana.com",
-    logo: "https://www.sevanjaliprathishtana.com/images/og-image.jpg",
+    logo: "https://www.sevanjaliprathishtana.com/images/og-image.jpg", // static asset served from /public
     description:
       "Community-driven NGO from Farangipete, Karnataka, serving through healthcare, education, and social welfare since 1993. 344+ free medical camps and 10,000+ lives impacted.",
     foundingDate: "1993",

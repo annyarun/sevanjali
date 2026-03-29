@@ -187,7 +187,7 @@ export default function AboutPage() {
             <ScrollReveal>
               <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
                 <Image
-                  src="https://www.sevanjaliprathishtana.com/images/founder.png"
+                  src="/images/founder.png"
                   alt={founder.name}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"

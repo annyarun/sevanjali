@@ -34,7 +34,7 @@ export function HeroSection() {
             style={{ y: imageY, scale: imageScale }}
           >
             <Image
-              src="https://www.sevanjaliprathishtana.com/images/hero/hero-banner.jpg"
+              src="/images/hero/hero-banner.jpg"
               alt="Sevanjali community service"
               fill
               sizes="100vw"

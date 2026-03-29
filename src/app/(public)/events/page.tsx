@@ -88,7 +88,7 @@ export default async function EventsPage() {
                       className="aspect-square overflow-hidden rounded-xl"
                     >
                       <Image
-                        src={`https://www.sevanjaliprathishtana.com${src}`}
+                        src={src}
                         alt={`Ganeshotsava ${i + 1}`}
                         width={200}
                         height={200}
@@ -166,7 +166,7 @@ export default async function EventsPage() {
               <ScrollReveal key={i} delay={i * 80}>
                 <div className="mb-4 break-inside-avoid overflow-hidden rounded-xl glass">
                   <Image
-                    src={`https://www.sevanjaliprathishtana.com${src}`}
+                    src={src}
                     alt={`Event highlight ${i + 1}`}
                     width={600}
                     height={400 + (i % 3) * 100}

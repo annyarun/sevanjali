@@ -31,7 +31,7 @@ export function GallerySection() {
             <ScrollReveal key={i} delay={i * 80}>
               <div className="mb-4 break-inside-avoid overflow-hidden rounded-xl glass">
                 <Image
-                  src={`https://www.sevanjaliprathishtana.com${img.src}`}
+                  src={img.src}
                   alt={img.alt}
                   width={600}
                   height={400 + (i % 3) * 100}

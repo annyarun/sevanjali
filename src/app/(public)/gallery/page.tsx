@@ -85,7 +85,7 @@ export default function GalleryPage() {
                     }`}
                   >
                     <Image
-                      src={`https://www.sevanjaliprathishtana.com${img.src}`}
+                      src={img.src}
                       alt={img.alt}
                       width={600}
                       height={400 + (i % 3) * 100}

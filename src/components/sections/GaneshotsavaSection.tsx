@@ -77,7 +77,7 @@ export function GaneshotsavaSection() {
                 className="shrink-0 w-[300px] sm:w-[350px] lg:w-[420px] overflow-hidden rounded-lg"
               >
                 <Image
-                  src={`https://www.sevanjaliprathishtana.com${src}`}
+                  src={src}
                   alt={`Ganeshotsava celebration ${(i % ganeshotsava.images.length) + 1}`}
                   width={420}
                   height={280}

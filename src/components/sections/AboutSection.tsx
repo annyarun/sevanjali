@@ -54,7 +54,7 @@ export function AboutSection() {
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
                 <motion.div className="absolute inset-0" style={{ y: imageY }}>
                   <Image
-                    src="https://www.sevanjaliprathishtana.com/images/gallery/medical-3.jpg"
+                    src="/images/gallery/medical-3.jpg"
                     alt="Sevanjali medical camp"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
