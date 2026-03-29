@@ -2,30 +2,88 @@
 import Image from "next/image";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { siteData } from "@/lib/data";
 
 const galleryCategories = [
   {
-    title: "Medical Camps",
+    title: "Healthcare & Blood Donation",
     images: [
-      { src: "/images/gallery/medical-3.jpg", alt: "Medical camp consultation" },
-      { src: "/images/gallery/medical-3.jpg", alt: "Free health check-up" },
-      { src: "/images/gallery/medical-3.jpg", alt: "Medicine distribution" },
+      { src: "/images/gallery/blood-donation-121-certificate.jpg", alt: "121st blood donation camp — certificate presentation" },
+      { src: "/images/gallery/blood-donation-121-donor.jpg", alt: "121st blood donation camp — donor" },
+      { src: "/images/gallery/blood-donation-114-group.jpg", alt: "114th blood donation camp group photo" },
+      { src: "/images/gallery/blood-donation-110-speech.jpg", alt: "110th blood donation camp — inauguration speech" },
+      { src: "/images/gallery/blood-donation-110-donor.jpg", alt: "110th blood donation camp — donor" },
+      { src: "/images/gallery/blood-donation-vintage-camp.jpg", alt: "Early blood donation camp" },
+      { src: "/images/gallery/heart-cancer-camp.jpg", alt: "Free heart & cancer screening camp" },
+      { src: "/images/gallery/medical-1.jpg", alt: "Free medical camp consultation" },
+      { src: "/images/gallery/medical-2.jpg", alt: "Medical camp in progress" },
+      { src: "/images/gallery/medical-4.jpg", alt: "Healthcare outreach programme" },
+      { src: "/images/gallery/medical-5.jpg", alt: "Free health camp" },
     ],
   },
   {
     title: "Ganeshotsava Celebrations",
-    images: siteData.ganeshotsava.images.map((src, i) => ({
-      src,
-      alt: `Ganeshotsava celebration ${i + 1}`,
-    })),
+    images: [
+      { src: "/images/gallery/ganesh-bhajan-ladies.jpg", alt: "Ladies bhajan group at Ganeshotsava" },
+      { src: "/images/gallery/ganesh-rangoli-decoration.jpg", alt: "Rangoli decoration during Ganeshotsava" },
+      { src: "/images/gallery/ganesh-leaf-prep-2023.jpg", alt: "Ganeshotsava preparations — flower & leaf arrangements" },
+      { src: "/images/gallery/ganesh-leaf-prep-2019.jpg", alt: "Ganeshotsava preparations — 2019" },
+      { src: "/images/gallery/ganesh-idol-puja-2020.jpg", alt: "Ganesh idol puja ceremony" },
+      { src: "/images/gallery/ganesh-puja-priest-2020.jpg", alt: "Priest performing puja" },
+      { src: "/images/gallery/ganesh-visarjan-outdoor.jpg", alt: "Ganesh visarjan procession" },
+      { src: "/images/gallery/ganesh-evening-aarti.jpg", alt: "Evening aarti ceremony" },
+      { src: "/images/gallery/ganesh-celebrations-crowd.jpg", alt: "Ganeshotsava — large community gathering" },
+      { src: "/images/gallery/ganesh-idol.jpg", alt: "Ganeshotsava idol" },
+      { src: "/images/gallery/ganesh-puja.jpg", alt: "Puja ceremony" },
+      { src: "/images/gallery/ganesh-bhajan.jpg", alt: "Bhajan programme" },
+      { src: "/images/gallery/ganesh-gathering.jpg", alt: "Community gathering" },
+      { src: "/images/gallery/ganesh-prep1.jpg", alt: "Festival preparation" },
+      { src: "/images/gallery/ganesh-prep2.jpg", alt: "Festival preparation" },
+    ],
   },
   {
-    title: "Community Events",
+    title: "Aerial Views",
     images: [
-      { src: "/images/events/community-prayer.jpg", alt: "Community prayer gathering" },
-      { src: "/images/events/ganesh-gathering.jpg", alt: "Community gathering" },
-      { src: "/images/events/ganesh-bhajan.jpg", alt: "Bhajan programme" },
+      { src: "/images/gallery/aerial-ganesh-chariot-night.jpg", alt: "Ganeshotsava chariot procession — aerial night view" },
+      { src: "/images/gallery/aerial-crowd-night.jpg", alt: "Ganeshotsava celebrations — aerial crowd view" },
+      { src: "/images/gallery/aerial-ganesh-float-lit.jpg", alt: "Illuminated Ganesh float — aerial view" },
+      { src: "/images/gallery/aerial-ganesh-procession-lit.jpg", alt: "Ganesh procession with lights — aerial" },
+      { src: "/images/gallery/aerial-fireworks-night.jpg", alt: "Fireworks over Farangipete during celebrations" },
+      { src: "/images/gallery/aerial-building-day.jpg", alt: "Sevanjali Prathishtana building — aerial view" },
+      { src: "/images/gallery/aerial1.jpg", alt: "Aerial view 1" },
+      { src: "/images/gallery/aerial2.jpg", alt: "Aerial view 2" },
+      { src: "/images/gallery/aerial3.jpg", alt: "Aerial view 3" },
+      { src: "/images/gallery/aerial4.jpg", alt: "Aerial view 4" },
+    ],
+  },
+  {
+    title: "Community & Social Welfare",
+    images: [
+      { src: "/images/gallery/flood-relief-boat-donation.jpg", alt: "Flood relief — boat donation to rescue teams" },
+      { src: "/images/gallery/flood-relief-lifejackets.jpg", alt: "Flood relief — life jacket distribution" },
+      { src: "/images/gallery/tb-patient-welfare-event.jpg", alt: "TB patient welfare support distribution" },
+      { src: "/images/gallery/tb-patient-welfare-meeting.jpg", alt: "TB patient welfare programme meeting" },
+      { src: "/images/gallery/tb-food-distribution.jpg", alt: "Food & essentials distribution for TB patients" },
+      { src: "/images/gallery/community-meeting-2020.jpg", alt: "Community awareness meeting" },
+      { src: "/images/gallery/committee-meeting.jpg", alt: "Sevanjali committee meeting" },
+      { src: "/images/gallery/sevanjali-team-group.jpg", alt: "Sevanjali Prathishtana volunteers team" },
+      { src: "/images/gallery/health-awareness-event.jpg", alt: "Health awareness programme" },
+      { src: "/images/gallery/community-2.jpg", alt: "Community event" },
+      { src: "/images/gallery/charity-1.jpg", alt: "Charity programme" },
+      { src: "/images/gallery/charity-2.jpg", alt: "Charity event" },
+      { src: "/images/gallery/charity-3.jpg", alt: "Community welfare" },
+    ],
+  },
+  {
+    title: "Vintage & History",
+    images: [
+      { src: "/images/gallery/vintage-ganesh-procession.jpg", alt: "Historic Ganeshotsava procession" },
+      { src: "/images/gallery/vintage-yakshagana-dance.jpg", alt: "Traditional Yakshagana performance" },
+      { src: "/images/gallery/vintage-ganesh-gathering.jpg", alt: "Early Ganeshotsava gathering" },
+      { src: "/images/gallery/vintage-religious-stage.jpg", alt: "Vintage religious stage programme" },
+      { src: "/images/gallery/vintage-event-gateway.jpg", alt: "Vintage festival gateway" },
+      { src: "/images/gallery/kannada-sahitya-sammelana.jpg", alt: "Kannada Sahitya Sammelana" },
+      { src: "/images/gallery/vintage1.jpg", alt: "Vintage photograph 1" },
+      { src: "/images/gallery/vintage2.jpg", alt: "Vintage photograph 2" },
     ],
   },
 ];
@@ -78,7 +136,7 @@ export default function GalleryPage() {
 
             <div className="columns-1 sm:columns-2 lg:columns-3 gap-4">
               {category.images.map((img, i) => (
-                <ScrollReveal key={`${category.title}-${i}`} delay={i * 80}>
+                <ScrollReveal key={`${category.title}-${i}`} delay={i * 60}>
                   <div
                     className={`mb-4 break-inside-avoid overflow-hidden rounded-xl ${
                       catIndex % 2 === 0 ? "glass-light" : "glass"

@@ -4,15 +4,18 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 const galleryImages = [
-  { src: "/images/gallery/medical-3.jpg", alt: "Free medical camp in progress" },
-  { src: "/images/events/ganesh-idol.jpg", alt: "Ganeshotsava idol decoration" },
-  { src: "/images/events/ganesh-bhajan.jpg", alt: "Bhajan programme" },
-  { src: "/images/gallery/medical-3.jpg", alt: "Healthcare outreach" },
-  { src: "/images/events/ganesh-gathering.jpg", alt: "Community gathering" },
-  { src: "/images/events/community-prayer.jpg", alt: "Community prayer" },
-  { src: "/images/events/ganesh-puja.jpg", alt: "Puja ceremony" },
-  { src: "/images/events/ganesh-aerial-night.jpg", alt: "Night celebration aerial view" },
-  { src: "/images/events/ganesh-prep1.jpg", alt: "Festival preparation" },
+  { src: "/images/gallery/aerial-ganesh-chariot-night.jpg", alt: "Ganeshotsava chariot procession — aerial night view" },
+  { src: "/images/gallery/blood-donation-121-certificate.jpg", alt: "121st blood donation camp certificate presentation" },
+  { src: "/images/gallery/ganesh-bhajan-ladies.jpg", alt: "Ladies bhajan group at Ganeshotsava" },
+  { src: "/images/gallery/aerial-fireworks-night.jpg", alt: "Fireworks during Ganeshotsava celebrations" },
+  { src: "/images/gallery/flood-relief-boat-donation.jpg", alt: "Flood relief — boat donation to rescue teams" },
+  { src: "/images/gallery/ganesh-idol-puja-2020.jpg", alt: "Ganesh idol puja ceremony" },
+  { src: "/images/gallery/aerial-building-day.jpg", alt: "Sevanjali Prathishtana building — aerial view" },
+  { src: "/images/gallery/blood-donation-114-group.jpg", alt: "114th blood donation camp group photo" },
+  { src: "/images/gallery/ganesh-rangoli-decoration.jpg", alt: "Rangoli decoration during festival" },
+  { src: "/images/gallery/tb-patient-welfare-event.jpg", alt: "TB patient welfare support programme" },
+  { src: "/images/gallery/ganesh-visarjan-outdoor.jpg", alt: "Ganesh visarjan procession" },
+  { src: "/images/gallery/vintage-ganesh-procession.jpg", alt: "Historic Ganeshotsava procession" },
 ];
 
 export function GallerySection() {
