@@ -13,7 +13,7 @@ import {
 import { ACTIVITY_TAGS } from "@/lib/activity-update-constants";
 import { DeleteConfirm } from "@/components/admin/DeleteConfirm";
 import { ImageUpload } from "@/components/admin/ImageUpload";
-import { X, Plus, Pencil, Calendar, Tag, Eye, EyeOff } from "lucide-react";
+import { X, Plus, Pencil, Calendar, Eye, EyeOff } from "lucide-react";
 
 const TAG_COLORS: Record<string, string> = {
   healthcare: "bg-red-50 text-red-600",

@@ -4,7 +4,7 @@ import { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Plus, X, Pencil } from "lucide-react";
 import { ImageUpload } from "./ImageUpload";
-import { iconOptions, iconMap } from "@/lib/icon-map";
+import { iconOptions } from "@/lib/icon-map";
 import {
   createActivity,
   updateActivity,

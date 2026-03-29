@@ -185,7 +185,7 @@ export default function FounderPage() {
                     Sri Krishna Kumar Punja — affectionately known as{" "}
                     <strong className="text-saffron font-medium">KK Punja</strong>{" "}
                     — is the Management Trustee of Sevanjali Prathishtana and
-                    the driving force behind the organisation's extraordinary
+                    the driving force behind the organisation&apos;s extraordinary
                     three-decade journey of community service in Farangipete,
                     Bantwal Taluk, Dakshina Kannada.
                   </p>
@@ -323,7 +323,7 @@ export default function FounderPage() {
               Inspired by His Vision?
             </h3>
             <p className="font-body text-base text-ash mb-8">
-              Join us in continuing KK Punja's legacy of compassion and service.
+              Join us in continuing KK Punja&apos;s legacy of compassion and service.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link

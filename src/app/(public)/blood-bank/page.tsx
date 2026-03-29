@@ -300,8 +300,8 @@ export default function BloodBankPage() {
                     Register as a Donor
                   </h2>
                   <p className="font-body text-sm text-ash leading-relaxed">
-                    Add yourself to our voluntary donor list. We'll only contact you when
-                    there's a genuine need matching your blood group in your area.
+                    Add yourself to our voluntary donor list. We&apos;ll only contact you when
+                    there&apos;s a genuine need matching your blood group in your area.
                   </p>
                 </div>
                 <DonateBloodForm />
