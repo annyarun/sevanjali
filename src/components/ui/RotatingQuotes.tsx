@@ -20,11 +20,16 @@ const quotes = [
 ];
 
 export function RotatingQuotes() {
-  const [index, setIndex] = useState(() =>
-    Math.floor(Math.random() * quotes.length)
-  );
+  // Always start at 0 so server and client render the same quote on first paint.
+  // After mount, jump to a random index so the sequence feels fresh each visit.
+  const [index, setIndex] = useState(0);
   const [visible, setVisible] = useState(true);
   const timeoutRef = useRef<ReturnType<typeof setTimeout>>(null);
+
+  useEffect(() => {
+    // Randomise starting quote client-side only (after hydration)
+    setIndex(Math.floor(Math.random() * quotes.length));
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
