@@ -20,16 +20,14 @@ const quotes = [
 ];
 
 export function RotatingQuotes() {
-  // Always start at 0 so server and client render the same quote on first paint.
-  // After mount, jump to a random index so the sequence feels fresh each visit.
-  const [index, setIndex] = useState(0);
+  // Math.random() runs only on the client ("use client" component).
+  // suppressHydrationWarning on the <p> tells React that the initial
+  // server/client mismatch here is intentional, so no hydration warning fires.
+  const [index, setIndex] = useState(() =>
+    Math.floor(Math.random() * quotes.length)
+  );
   const [visible, setVisible] = useState(true);
   const timeoutRef = useRef<ReturnType<typeof setTimeout>>(null);
-
-  useEffect(() => {
-    // Randomise starting quote client-side only (after hydration)
-    setIndex(Math.floor(Math.random() * quotes.length));
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -57,6 +55,7 @@ export function RotatingQuotes() {
 
   return (
     <p
+      suppressHydrationWarning
       className="font-body text-sm text-cream/50 max-w-[520px] italic font-light leading-relaxed mt-4 min-h-[3em] transition-all duration-700 ease-in-out"
       style={{
         opacity: visible ? 1 : 0,

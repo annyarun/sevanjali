@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Quote, Award, Heart, Users, Star, CheckCircle2, ArrowRight } from "lucide-react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { CtaSection } from "@/components/sections/CtaSection";
 
 const milestones = [
   {
